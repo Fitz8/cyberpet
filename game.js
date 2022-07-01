@@ -15,8 +15,8 @@ async function startGame() {
   |___   |   |__] |___ |  \\    |    |___  |  ___]`);
   console.log("\nWelcome to cyber pets!\n");
   console.log(`Rules:
-  Do not let your pet's hunger, thirst or energy reach 0!
-  Do not let your pet's boredom reach 100!
+  Do not let your pets hunger, thirst or energy reach 0!
+  Do not let your bets boredom reach 100!
   If this happens, your pet will perish. Take good care of them :)\n
   `);
   
@@ -86,6 +86,7 @@ async function mainGame() {
         Press 'D' to give your pet some water 
         Press 'P' to play with your pet 
         Press 'R' to have a nap 
+        Press 'B' to give your pet a bath
         Press 'Q' to quit the game`,
         name: "choice",
         choices: [
@@ -108,6 +109,10 @@ async function mainGame() {
           {
             key: "r",
             value: "rest",
+          },
+          {
+            key: "B",
+            value: "bath",
           },
           {
             key: "q",
@@ -133,8 +138,8 @@ async function mainGame() {
       case "rest":
         pet.rest();
         break;
-      case "stats":
-        pet.stats();
+      case "bath":
+        pet.bath();
         break;
       case "quit":
         quit = true;

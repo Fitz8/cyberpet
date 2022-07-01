@@ -15,6 +15,7 @@ class Animal {
     this.boredom += 10;
     this.energy -= 10;
     console.log(`\n${this.name} has a nice drink of water\n`);
+    console.log(`Hunger - | Thirst + | Boredom + | Energy - \n`)
     this.stats();
     return this;
   }
@@ -28,6 +29,7 @@ class Animal {
     this.boredom += 10;
     this.energy -= 10;
     console.log(`\n${this.name} eats some food out of their food bowl\n`);
+    console.log(`Hunger + | Thirst - | Boredom + | Energy - \n`)
     this.stats();
     return this;
   }
@@ -41,6 +43,7 @@ class Animal {
     }
     this.energy -= 10;
     console.log(`\nYou take ${this.name} for a nice long walk!\n`);
+    console.log(`Hunger - | Thirst - | Boredom - | Energy - \n`)
     this.stats();
     return this;
   }
@@ -54,6 +57,7 @@ class Animal {
       this.energy = 100;
     }
     console.log(`\nYou and ${this.name} take a much needed nap\n`);
+    console.log(`Hunger - | Thirst - | Boredom + | Energy + \n`)
     this.stats();
     return this;
   }
