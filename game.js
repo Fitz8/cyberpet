@@ -89,7 +89,9 @@ async function mainGame() {
     if (isGameOver()) {
       break;
     }
-
+    
+    //Asking for the player's choice on what activity they want to choose
+    
     const player = await inquirer.prompt([
       {
         type: "expand",
@@ -135,6 +137,8 @@ async function mainGame() {
         ],
       },
     ]);
+
+    //Checking what the player chose and selecting the correct response
 
     switch (player.choice) {
       case "eats":

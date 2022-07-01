@@ -6,6 +6,8 @@ class Animal {
     this.boredom = 50;
     this.energy = 50;
   }
+//The if statements in the methods stop the stats from going over a maximum threshold
+
   drinks() {
     this.thirst += 30;
     if (this.thirst > 100) {
