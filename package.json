@@ -1,8 +1,7 @@
 {
   "name": "cyberpet",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "main": "game.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +10,15 @@
   "license": "ISC",
   "dependencies": {
     "inquirer": "^8.2.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fitz8/cyberpet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Fitz8/cyberpet/issues"
+  },
+  "homepage": "https://github.com/Fitz8/cyberpet#readme",
+  "description": ""
 }
