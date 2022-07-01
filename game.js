@@ -16,7 +16,7 @@ async function startGame() {
   console.log("\nWelcome to cyber pets!\n");
   console.log(`Rules:
   Do not let your pets hunger, thirst or energy reach 0!
-  Do not let your bets boredom reach 100!
+  Do not let your pets boredom reach 100!
   If this happens, your pet will perish. Take good care of them :)\n
   `);
   
@@ -25,7 +25,7 @@ async function startGame() {
     {
       type: "expand",
       message:
-        `Select which animal you want
+        `Select which animal you want as a pet!
         Press 'c' for cat.
         Press 'd' for dog.`,
       name: "animal",
@@ -55,14 +55,22 @@ async function startGame() {
 
   if (petChoice.animal == "dog") {
     pet = new Dog(petName.name);
-    console.log(`You have chosen a dog called ${pet.name}!`)
+    console.log(`You have chosen a dog named ${pet.name}!`)
     console.log(`       __
     o-''|\\_____/)
      \\_/|_)     )
         \\  __  /
-        (_/ (_/`)
+        (_/ (_/`);
+
   } else if (petChoice.animal == "cat") {
     pet = new Cat(petName.name);
+    console.log(`You have chosen a cat named ${pet.name}!`)
+    console.log(`
+    _._     _,-'""\`-._
+    (,-.\`._,'(       |\\\`-/|
+        \`-.-' \\ )-\`( , o o)
+              \`-    \\\`_\`"'-
+    `);
   }
 
 mainGame();
