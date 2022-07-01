@@ -14,6 +14,11 @@ async function startGame() {
   |     \\_/  |__] |___ |__/    |__] |___  |  [__  
   |___   |   |__] |___ |  \\    |    |___  |  ___]`);
   console.log("\nWelcome to cyber pets!\n");
+  console.log(`Rules:
+  Do not let your pet's hunger, thirst or energy reach 0!
+  Do not let your pet's boredom reach 100!
+  If this happens, your pet will perish. Take good care of them :)\n
+  `);
   
   //Asking for the player's choice on pet species
   const petChoice = await inquirer.prompt([
