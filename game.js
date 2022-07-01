@@ -55,6 +55,12 @@ async function startGame() {
 
   if (petChoice.animal == "dog") {
     pet = new Dog(petName.name);
+    console.log(`You have chosen a dog called ${pet.name}!`)
+    console.log(`       __
+    o-''|\\_____/)
+     \\_/|_)     )
+        \\  __  /
+        (_/ (_/`)
   } else if (petChoice.animal == "cat") {
     pet = new Cat(petName.name);
   }
